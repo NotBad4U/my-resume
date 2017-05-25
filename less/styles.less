@@ -70,6 +70,20 @@ header {
 		color: @grayDark;
 	}
 
+	a {
+		margin: 0;
+		height: 20px;
+		padding-right: 24px;
+		line-height: 16px;
+		vertical-align: middle;
+
+		.columns(4);
+		.offset(2.8);
+
+		text-align: right;
+		color: @grayDark;
+	}
+
 	p.email {
 		background: url(../img/email.png) top right no-repeat;
 	}
@@ -77,10 +91,10 @@ header {
 	p.phone {
 		background: url(../img/phone.png) top right no-repeat;
 	}
-	p.github {
+	a.github {
 		background: url(../img/github-logo.png) top right no-repeat;
 	}
-	p.stackoverflow {
+	a.stackoverflow {
 		background: url(../img/stack-overflow.png) top right no-repeat;
 	}
 }

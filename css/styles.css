@@ -444,16 +444,33 @@ header p {
 header p:first-child {
   margin-left: 0;
 }
+header a {
+  margin: 0;
+  height: 20px;
+  padding-right: 24px;
+  line-height: 16px;
+  vertical-align: middle;
+  display: inline;
+  float: left;
+  width: 460px;
+  margin-left: 20px;
+  margin-left: 316px !important;
+  text-align: right;
+  color: #333;
+}
+header a:first-child {
+  margin-left: 0;
+}
 header p.email {
   background: url(../img/email.png) top right no-repeat;
 }
 header p.phone {
   background: url(../img/phone.png) top right no-repeat;
 }
-header p.github {
+header a.github {
   background: url(../img/github-logo.png) top right no-repeat;
 }
-header p.stackoverflow {
+header a.stackoverflow {
   background: url(../img/stack-overflow.png) top right no-repeat;
 }
 h2 {
