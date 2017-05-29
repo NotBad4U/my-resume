@@ -376,6 +376,9 @@ li {
   font-family: "Droid Sans";
   color: #000;
 }
+a {
+  color: black;
+}
 code {
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -477,7 +480,7 @@ header img {
   position: absolute;
   max-width: 160px;
   max-height: 160px;
-  top: 30px;
+  top: 20px;
 }
 h2 {
   font-size: 24px;
@@ -624,6 +627,10 @@ ul.timeline li dl dd {
   padding-left: 10px;
 }
 ul.timeline li dl dd .env {
+  font-weight: bold;
+  color: #333;
+}
+.env {
   font-weight: bold;
   color: #333;
 }
