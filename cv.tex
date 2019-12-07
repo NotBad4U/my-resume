@@ -1,0 +1,248 @@
+% !TEX TS-program = xelatex
+\documentclass[9pt]{developercv}
+
+\usepackage{romannum}
+\usepackage{phonenumbers}
+
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth}
+	\vspace{-\baselineskip}
+	
+	\colorbox{black}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Alessio}}}}}
+
+	\colorbox{black}{{\Huge\textcolor{white}{\textbf{\MakeUppercase{Coltellacci}}}}}
+	
+	\vspace{6pt}
+	
+	{\huge System developer}
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth}
+	\vspace{-\baselineskip}
+	\icon{MapMarker}{12}{Toulouse, France}\\
+	\icon{Phone}{12}{\phonenumber[country=FR]{+33645133174}}\\
+	\icon{At}{12}{\href{mailto:lightplay8@gmail.com}{lightplay8@gmail.com}}\\
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Github}{12}{\href{https://github.com/NotBad4U}{github.com/NotBad4U}}\\
+	\icon{Twitter}{12}{\href{https://twitter.com/@lightplay8}{@lightplay8}}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Who Am I?}
+
+\begin{minipage}[t]{0.4\textwidth}
+	\vspace{-\baselineskip}
+	I have been working in the Cloud industry for two
+	years now, with a focus on systems, virtualization and
+	networking. I’m always hungry to learn new things
+	and I’m happiest when I can marry math, computer
+	science, and philosophy on a problem and create
+	novel solutions. It is not in science that I found
+	happiness, but in the acquisition and the discovery of
+	it. I am a lateral thinker geared towards solving
+	complex and Kafkaïen problems by trying to meet
+	them with the simplest system that can be found,
+	which is for me to find the most elegant, constricted
+	and synthesized solution. Furthermore, I have a keen
+	desire to try out programming, algorithmic concepts
+	and languages on a wider spectrum through
+	experiments and research.
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip}
+	\begin{barchart}{5.5}
+		\baritem{Rust}{100}
+		\baritem{C}{100}
+		\baritem{Java/JavaScript/Go}{70}
+		\baritem{Latex}{50}
+		\baritem{Scala}{40}
+		\baritem{NASM/ARM}{35}
+		\baritem{PDDL}{35}
+		\baritem{Coq}{25}
+		\baritem{TLA+}{25}
+		\baritem{eBPF}{25}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{5/Linux, 5/Docker, 6/Git, 5/KVM\&Qemu, 4/Emacs, 3/VSCode, 3/Blender}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Education}
+
+\begin{entrylist}
+	\entry
+		{2016 -- 2018}
+		{Master's degree}
+		{\href{http://www.univ-tlse3.fr/}{Paul Sabatier university, Toulouse}}
+		{A formation in Software development in order to become an expert in software engineering, with a
+		particular focus on distributed systems and critical software. Skills I have acquired include: Coq, TLA
+		+, EventB, and UPPAAL.}
+	\entry
+		{2014 -- 2016}
+		{Bachelor's degree}
+		{\href{http://www.univ-tlse3.fr/}{Paul Sabatier university, Toulouse}}
+		{A formation in computer science and fundamental maths and physics in order to generate enthusiasm
+		for science and research. With initiation and experiments on the work as a research scientist.}
+	\entry
+		{2013}
+		{Highschool degree}
+		{\href{https://pierre-paul-riquet.mon-ent-occitanie.fr/lycee-riquet/}{Highschool Pierre-Paul Riquet, Toulouse}}
+		{With an option in computer science and finalist at the regional and national engineering science Olympiad,
+		where we participated with our self-made biped robot.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Experience}
+
+\begin{entrylist}
+	\entry
+		{2017 -- 2019}
+		{System Developer}
+		{Clever Cloud.}
+		{
+			Clever Cloud is a platform as a service (PAAS) following the immutable infrastructure paradigm. So
+			servers are never modified after they’re deployed. If something needs to be updated or fixed in any way,
+			new servers built with the appropriate changes are provisioned to replace the old ones. This paradigm
+			doesn’t fit well with the current reverse proxy and DNS server which doesn’t support high reload of their
+			configuration. I contributed to the development of the OS project which solves this problem:\\
+			- Stream-DNS, an authority and resolver DNS server with an event-sourcing architecture to manage his DNS zones.\\
+			- Sozu, an HTTP reverse proxy, configurable at runtime, fast and safe, built-in Rust.\\
+			\textbf{\texttt{Rust}}\slashsep\texttt{Scala}\slashsep\texttt{Webassembly}\slashsep\texttt{Docker}\slashsep\texttt{Network}\slashsep\texttt{KVM\&Qemu}\slashsep\texttt{Microservices}
+		}
+	\entry
+		{2016 -- 2018}
+		{Freelance}
+		{}
+		{
+			Alongside my studies, I worked as freelance in small, medium and large companies. In order to improve
+			my skills in software engineering. I worked on topics ranging from web development and distributed
+			systems for aeronautics in the Aircraft Communication Addressing and Reporting System (ACARS).\\
+			\texttt{Angular}\slashsep\texttt{NodeJS}\slashsep\texttt{Docker}\slashsep\texttt{MongoDB}\slashsep\texttt{Elasticsearch}
+		}
+	\entry
+		{April -- July 2017}
+		{Internship}
+		{Fujitsu systems Europe.}
+		{
+			I contributed to the grid computing of Fujitsu, by adding the integration of WebDAV protocol for the
+			exchange of batch jobs files between nodes in the grid.\\
+			\texttt{JavaEE}\slashsep\texttt{WebDAV}\slashsep\texttt{Jenkins}\slashsep\texttt{Docker}\slashsep\texttt{MongoDB}
+		}
+	\entry
+		{April -- Sep. 2015}
+		{Internship}
+		{Ekito}
+		{
+			I participated to the benchmark of new surf drifts made by the surfer of S-Wings company. I transformed
+			surfboards in a connected surfboard by putting IoT devices on it. I developed the algorithm and driver
+			of the devices to extract the data of the surfboard (speed, acceleration, etc.) and transfer it through
+			radio in 433 Hz. This data was post treated on a software that I made, with a 3D view of the surfboard
+			to replay the course through data extracted.\\
+			\texttt{IOT}\slashsep\texttt{C}\slashsep\texttt{NodeJS}\slashsep\texttt{WebGL}
+		}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	CONFERENCES
+%----------------------------------------------------------------------------------------
+
+\cvsect{Speaker in conferences}
+\begin{itemize}
+	\item Devoxx United Kingdom 2019, Introduction to Rust programming language.
+	\item Devoxx 2018 Ukraine, Actor, an elegant model for concurrent and distributed computation.
+	\item Voxxed Days Luxembourg 2018, Understand the Linux container by building one from scratch.
+	\item Devoxx 2018 France, Introduction to Rust programming language.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH INTERESTS
+%----------------------------------------------------------------------------------------
+
+\cvsect{Research Interests}
+\begin{entrylist}
+	\entry
+	{}
+	{Temporal Logic}
+	{}
+	{
+		Cover approaches to representation and reasoning about time, events and temporal information within a
+		logical framework. Narrowly to refer specifically the modal-logic type of approach introduced by Arthur
+		Prior under the name of Tense Logic.\\
+		\texttt{Logic Tense}\slashsep\texttt{LTLP}\slashsep\texttt{CTL*}\slashsep\texttt{TLA+}\slashsep\texttt{UPPAAL}\slashsep\texttt{PDDL 3}
+	}
+	\entry
+	{}
+	{Modal Logic}
+	{}
+	{
+		The study within a logical framework of the deductive behavior in related systems, which include the
+		logic for belief, tense, deontology, geography and many others. It’s particularly valuable in the formal
+		analysis of specifications and philosophical arguments.\\
+		\texttt{Kripke}\slashsep\texttt{Deontic logic}
+	}
+	\entry
+	{}
+	{Actor model}
+	{}
+	{
+		A message passing concurrency model that was originally proposed by Hewitt in 1973. This model and
+		his plethora variations are valuable to avoid common concurrency issues such as low-Level data races
+		and deadlock by design, due to the nature of actors: a strictly isolated entity and his nature of its
+		communication mechanism.\\
+		\texttt{Sessions-type}\slashsep\texttt{Akka}\slashsep\texttt{Actix}
+	}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+\begin{center}
+
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+	\cvsect{Languages}
+	\begin{itemize}
+
+	\item \textbf{French} - Mother tongue
+	\item \textbf{English} - Level C1 (CECRL)
+	\end{itemize}
+
+\end{minipage}
+\begin{minipage}[t]{0.3\textwidth}
+	\vspace{-\baselineskip}
+	
+	\cvsect{Hobbies}
+	\begin{itemize}
+		\item[\faDribbble] Basket-ball, university player.
+		\item[\faPaintBrush] 3D computer graphics with Blender and Photoshop.
+		\item[\faBook] Litterature of \Romannum{18}\textsuperscript{e} - \Romannum{19}\textsuperscript{e}.
+		\item[\faBook] Philosophy of the \Romannum{18}\textsuperscript{e}.
+	\end{itemize}
+\end{minipage}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
